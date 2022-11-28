@@ -1,2 +1,2 @@
-# Controller
-sumber [Membuat Aplikasi MVC dengan PHP #4 Controller](https://www.youtube.com/watch?v=q41f0fc10Ns)
+# View
+sumber [Membuat Aplikasi MVC dengan PHP #5 View](https://www.youtube.com/watch?v=LRa-xO4qIAc)
