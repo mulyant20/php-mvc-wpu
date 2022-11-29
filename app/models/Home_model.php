@@ -1,19 +1,17 @@
 <?php
 
 class Home_model {
-    private $techstack = [
-        [
-            "name" => "React"
-        ],
-        [
-            "name" => "Php"
-        ],
-        [
-            "name" => "MySQL"
-        ]
-    ];
+    private $table = 'techstack';
+    private $db;
 
+    public function __construct()
+    {
+        $this->db = new Database;
+    }
+    
     public function getTechstack() {
-        return $this->techstack; 
+        $tableDB = $this->table;
+        $this->db->query("SELECT * FROM techstack");
+        return $this->db->getAll();
     }
 }
