@@ -33,7 +33,7 @@ class Database {
     public function getAll() {
         $this->execute();
         $result = [];
-        while($data = mysqli_fetch_array($this->result)) {
+        while($data = $this->result->fetch_array()) {
             array_push($result, $data);
         }
         return $result;
