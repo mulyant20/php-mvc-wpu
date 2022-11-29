@@ -1,2 +1,2 @@
-# View
-sumber [Membuat Aplikasi MVC dengan PHP #5 View](https://www.youtube.com/watch?v=LRa-xO4qIAc)
+# Model
+sumber [Membuat Aplikasi MVC dengan PHP #7 Model](https://www.youtube.com/watch?v=fgk1Mv3wes4)
