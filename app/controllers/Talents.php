@@ -1,10 +1,10 @@
 <?php
 
-class About extends Controller {
+class Talents extends Controller {
     public function index() {
-        $data['title'] = 'About';
+        $data['title'] = 'Talent index';
         $this->view('templates/header', $data);
-        $this->view('about/index', $data);
+        $this->view('talents/index');
         $this->view('templates/footer');
     }
 }

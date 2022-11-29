@@ -2,13 +2,16 @@
 
 class App {
     protected $controller = 'home';
-    protected $method = 'index';
-    protected $params = [];
+	protected $method = 'index';
+	protected $params = [];
     
     public function __construct() {
         $url = $this->parseUrl();
 
-        // mengecek jika kontroller tidak ada
+        // mengarahkan ke home jika tidak ada page di url
+        $url === null && $url = [$this->controller];
+
+        // mengecek jika kontroller ada
         if(file_exists('../app/controllers/' . $url[0]) . '.php') {
             $this->controller = $url[0];
             unset($url[0]);
@@ -22,6 +25,8 @@ class App {
             if(method_exists($this->controller, $url[1])) {
                 $this->method = $url[1];
                 unset($url[1]);
+            } else {
+                $this->method = 'index';
             }
         }
 

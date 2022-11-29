@@ -1,1 +1,1 @@
-<h1>about <?= $data['name'] ?></h1>
+<h1>about page</h1>
