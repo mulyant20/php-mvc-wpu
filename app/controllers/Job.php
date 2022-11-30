@@ -1,6 +1,7 @@
 <?php
 
 class Job extends Controller{
+    //Testing
     public function detail($id){
         $data['title'] = "Detail";
         $data['id'] = $id;
