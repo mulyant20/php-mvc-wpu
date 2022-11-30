@@ -10,8 +10,8 @@ class Job extends Controller{
         $this->view('job/detail', $data);
         $this->view('templates/footer');
     }
-
     public function delete($id){
         $data = "Hello";
+        echo "delete";
     }
 }
